@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "linkedin-post-scheduler"
+version = "0.1.0"
+description = "FastAPI backend for reliably scheduling LinkedIn posts"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic==1.14.1",
+  "anyio==4.8.0",
+  "celery[redis]==5.4.0",
+  "cryptography==44.0.2",
+  "fastapi==0.115.11",
+  "httpx==0.28.1",
+  "psycopg[binary]==3.2.6",
+  "pydantic==2.10.6",
+  "pydantic-settings==2.8.1",
+  "python-json-logger==3.2.1",
+  "sqlalchemy==2.0.39",
+  "uvicorn[standard]==0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.5",
+  "pytest-cov==6.0.0",
+  "ruff==0.11.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Header", "fastapi.Query"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --disable-warnings"
+
