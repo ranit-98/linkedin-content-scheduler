@@ -9,6 +9,13 @@ This repository contains both applications:
 - `frontend/` — Next.js dashboard and login experience.
 - `backend/` — FastAPI API, PostgreSQL persistence, Redis, Celery worker, and scheduler.
 
+## Application screencast
+
+[▶ Watch the complete application demo](docs/assets/linkedin-post-scheduler-demo.webm)
+
+The screencast demonstrates the frontend dashboard, LinkedIn connection state, post composer,
+immediate and scheduled publishing options, activity timeline, and LinkedIn-style post preview.
+
 ## Features
 
 - Connect a LinkedIn member with OAuth 2.0/OpenID Connect.
