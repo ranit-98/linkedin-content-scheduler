@@ -11,7 +11,8 @@ This repository contains both applications:
 
 ## Application screencast
 
-[▶ Watch the complete application demo](docs/assets/linkedin-post-scheduler-demo.webm)
+[▶ Watch the complete application demo][Screencast from 2026-10-21 14-20-17.webm](https://github.com/user-attachments/assets/c7836df9-ca50-4886-a569-878137e22eb9)
+
 
 The screencast demonstrates the frontend dashboard, LinkedIn connection state, post composer,
 immediate and scheduled publishing options, activity timeline, and LinkedIn-style post preview.
