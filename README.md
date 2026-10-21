@@ -16,6 +16,38 @@ https://github.com/user-attachments/assets/c7836df9-ca50-4886-a569-878137e22eb9
 The screencast demonstrates the frontend dashboard, LinkedIn connection state, post composer,
 immediate and scheduled publishing options, activity timeline, and LinkedIn-style post preview.
 
+## Application screenshots
+
+### Login and connection
+
+![LinkedIn connection and local demo login screen](docs/assets/login-screen.png)
+
+### Dashboard and scheduling
+
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>Dashboard overview</strong></td>
+    <td width="50%" align="center"><strong>Schedule a post</strong></td>
+  </tr>
+  <tr>
+    <td><img src="docs/assets/dashboard-overview.png" alt="Dashboard overview with LinkedIn connection and publishing activity" /></td>
+    <td><img src="docs/assets/schedule-post-form.png" alt="Post composer with scheduling controls" /></td>
+  </tr>
+</table>
+
+### LinkedIn-style post previews
+
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>Published post with media</strong></td>
+    <td width="50%" align="center"><strong>Scheduled text post</strong></td>
+  </tr>
+  <tr>
+    <td><img src="docs/assets/published-post-preview.png" alt="LinkedIn-style preview of a published image post" /></td>
+    <td><img src="docs/assets/scheduled-post-preview.png" alt="LinkedIn-style preview of a scheduled text post" /></td>
+  </tr>
+</table>
+
 ## Features
 
 - Connect a LinkedIn member with OAuth 2.0/OpenID Connect.
